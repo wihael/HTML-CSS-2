@@ -1,0 +1,14 @@
+.parent {
+  position: relative;
+}
+
+.prvi {
+  position: absolute;
+  top: -70px;
+  left: -70px;
+}
+
+.drugi {
+  position: relative;
+  z-index: 1;
+}

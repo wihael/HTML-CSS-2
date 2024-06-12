@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.item {
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.visina50 {
+  height: 50vh;
+}
+
+/* Zadatak 1 */
+
+.zadatak1 {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Zadatak 2 */
+
+.zadatak2 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.zadatak2 .item:first-child {
+  grid-column: 2 / 6;
+}
+
+.zadatak2 .item:last-child {
+  grid-column: 6 / 12;
+}
+
+/* Zadatak 3 */
+
+.zadatak3 {
+  height: 100vh;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, auto) 1fr auto;
+}
+
+.zadatak3 header,
+.zadatak3 footer {
+  grid-column: 1 / -1;
+}
+
+.zadatak3 section {
+  grid-column: 1 / 4;
+  grid-row: 2 / -2;
+}
+
+.zadatak3 nav,
+.zadatak3 main {
+  grid-column: 4 / -4;
+}
+
+.zadatak3 aside {
+  grid-column: 10 / 13;
+  grid-row: 2 / -2;
+}
+
+/* Zadatak 4 */
+
+.zadatak4 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* Zadatak 5 */
+
+.zadatak5 {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.zadatak5 .item1 {
+  grid-column: -1 / -4;
+  grid-row: -1 / -4;
+}
+
+.zadatak5 .item2 {
+  grid-column: -4 / -7;
+  grid-row: -4 / -7;
+}
+
+.zadatak5 .item3 {
+  grid-column: 4 / 7;
+  grid-row: 4 / 7;
+}
+
+.zadatak5 .item4 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+}

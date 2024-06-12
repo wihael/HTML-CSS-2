@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+body {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+nav ul {
+  border: 5px solid orange;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  border: 5px solid green;
+  flex-shrink: 1; /* Početno stanje */
+  flex-grow: 0; /* Početno stanje */
+  flex-grow: 1;
+  flex-basis: auto; /* Početno stanje */
+  flex-basis: 0;
+}
+
+nav li {
+  flex: 1;
+}

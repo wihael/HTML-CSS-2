@@ -1,0 +1,20 @@
+.parent {
+  position: relative;
+}
+
+/* .prvi {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+} */
+
+.drugi {
+  position: sticky;
+  top: 100px;
+  margin-left: 380px;
+}
+
+.cetvrti {
+  position: sticky;
+  bottom: 0;
+}

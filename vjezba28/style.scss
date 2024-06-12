@@ -1,0 +1,15 @@
+@import "colors", "primjer";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.crvena {
+  width: 400px;
+  height: 400px;
+  background-color: $crvena;
+  font-size: 20px;
+  color: $bijela;
+}

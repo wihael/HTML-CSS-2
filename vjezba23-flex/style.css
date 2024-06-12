@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  min-height: 600px;
+  display: flex;
+  color: #fff;
+}
+
+/* Smjer kretanja */
+
+.flex-container {
+  flex-direction: row; /* Ovo je početno stanje i nije ga potrebno pisati */
+  /*   flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse; */
+}
+
+/* Dopušteno/Nedopušteno prebacivanje u novi red */
+
+.flex-container {
+  flex-wrap: nowrap; /* Ovo je početno stanje i nije ga potrebno pisati */
+  flex-wrap: wrap;
+  /*   flex-wrap: wrap-reverse; */
+}
+
+/* Pozicioniranje elemenata unutar retka */
+
+.flex-container {
+  justify-content: flex-start; /* Ovo je "Početno" stanje i nije ga potrebno pisati */
+  /*   justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly; */
+}
+
+/* Pozicioniranje elemenata unutar stupca */
+
+.flex-container {
+  align-items: stretch; /* Ovo je "Početno" stanje i nije ga potrebno pisati */
+  /*   align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: baseline; */
+}
+
+/* Pozicioniranje elemenata ako im je dopušteno prebacivanje u novi red (flex-wra:wrap) */
+
+.flex-container {
+  align-content: stretch; /* Ovo je "Početno" stanje i nije ga potrebno pisati */
+  /*   align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly; */
+}
+
+/* Zamijena pozicija flex-itema pomoću ordera */
+
+.flex-item:nth-child(4) {
+  order: 1;
+}
+
+.flex-item:nth-child(even) {
+  height: 50px;
+  min-width: 100px;
+  background-color: brown;
+}
+
+.flex-item:nth-child(odd) {
+  height: 50px;
+  min-width: 100px;
+  background-color: darkred;
+}

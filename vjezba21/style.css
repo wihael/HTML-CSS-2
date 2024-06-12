@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.navigacija {
+  display: flex;
+}
+
+li {
+  flex-basis: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+a:hover {
+  background-color: purple;
+}
+
+.podnavigacija {
+  display: none;
+}
+
+li:hover .podnavigacija {
+  display: block;
+}
+
+@media all and (max-width: 600px) {
+  .navigacija {
+    flex-direction: column;
+  }
+}

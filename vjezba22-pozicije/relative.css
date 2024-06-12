@@ -1,0 +1,19 @@
+.prvi {
+  position: relative;
+  right: 50px;
+}
+
+.drugi {
+  position: relative;
+  left: 120px;
+}
+
+.treci {
+  position: relative;
+  top: 120px;
+}
+
+.cetvrti {
+  position: relative;
+  bottom: 120px;
+}

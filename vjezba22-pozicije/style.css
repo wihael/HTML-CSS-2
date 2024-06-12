@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  width: 500px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.child {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  color: #fff;
+  line-height: 100px;
+}
+
+.prvi {
+  background-color: brown;
+}
+
+.drugi {
+  background-color: blue;
+}
+
+.treci {
+  background-color: sienna;
+}
+
+.cetvrti {
+  background-color: slateblue;
+}
